@@ -45,4 +45,8 @@
 
     <!--Whether help links are defined. -->
     <bool name="config_has_help">false</bool>
+
+    <!-- Whether to enable data usage selection -->
+    <bool name="config_data_usage_selection">true</bool>
+
 </resources>

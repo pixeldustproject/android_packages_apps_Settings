@@ -7888,4 +7888,7 @@
     <!-- Trigger Carrier Provisioning [CHAR LIMIT=NONE] -->
     <string name="trigger_carrier_provisioning">Trigger Carrier Provisioning</string>
 
+    <!-- Daily WiFi stats -->
+    <string name="set_data_time_range">Show time range</string>
+
 </resources>
