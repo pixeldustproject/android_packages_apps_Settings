@@ -226,5 +226,10 @@
     <string name="notification_tint_title">Benachrichtigungstitel dynamisch färben</string>
     <string name="notification_tint_summary_off">Die Titelfarbe von Benachrichtigungen wird durch das Designthema vorgegeben</string>
     <string name="notification_tint_summary_on">Die Titelfarbe von Benachrichtigungen wird durch die Icon-Farbe der App vorgegeben</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Statistiken zurücksetzen</string>
+    <string name="battery_stats_message">Akkuverbrauchsstatisken werden zurückgesetzt</string>
+    <string name="ok_string">OK</string>
 </resources>
 
