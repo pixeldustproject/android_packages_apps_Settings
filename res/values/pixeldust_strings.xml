@@ -17,6 +17,8 @@
 <!-- Custom Settings -->    
   <!-- Dashboard -->
     <string name="header_category_custom">ROM Personalization</string>
+    <string name="pixeldust_settings_title">Pixel Dust Settings</string>
+    <string name="pixeldust_settings_summary">ROM features &amp; customization</string>
 
 <!-- Development Settings -->
     <!-- Dev Options Enabled by Default -->
