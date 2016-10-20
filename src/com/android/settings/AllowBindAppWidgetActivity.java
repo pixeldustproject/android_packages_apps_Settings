@@ -78,6 +78,7 @@ public class AllowBindAppWidgetActivity extends AlertActivity implements
         finish();
     }
 
+    @Override
     protected void onPause() {
         if (!mClicked) { // RESULT_CANCELED
             finish();
@@ -85,6 +86,7 @@ public class AllowBindAppWidgetActivity extends AlertActivity implements
         super.onPause();
     }
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setResult(RESULT_CANCELED); // By default, set the result to cancelled
