@@ -18,6 +18,16 @@
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:title="@string/about_settings">
 
+        <!-- PixelDust Logo Header -->
+        <PreferenceScreen android:key="ic_settings_pixeldust"
+            android:layout="@layout/ic_settings_pixeldust" />
+
+        <!-- Changelog -->
+        <PreferenceScreen android:key="pixeldust_changelog"
+            android:title="@string/changelog_title"
+            android:summary="@string/changelog_summary"
+            android:fragment="com.android.settings.pixeldust.Changelog" />
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
