@@ -27,6 +27,11 @@
     <string name="build_compiler_clang">Clang version</string>
     <string name="build_compiler_default">Unknown</string>
 
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
+
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>
