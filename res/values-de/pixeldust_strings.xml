@@ -240,5 +240,18 @@
     <string name="battery_stats_reset">Statistiken zurücksetzen</string>
     <string name="battery_stats_message">Akkuverbrauchsstatisken werden zurückgesetzt</string>
     <string name="ok_string">OK</string>
+
+    <!-- Keyboard and Input methods  -->
+    <string name="attention">Achtung</string>
+    <string name="title_keyboard_input">Erweiterte Einstellungen</string>
+    <string name="disable_fullscreen_keyboard_title">Vollbild-Tastaturmodus deaktivieren</string>
+    <string name="disable_fullscreen_keyboard_summary">Verhindert dass die Tastatur im Querformat den ganzen Bildschirm verwendet</string>
+    <string name="keyboard_rotation_toggle_title">Automatische Drehung der Tastatur</string>
+    <string name="keyboard_rotation_toggle_summary">Erzwingt automatisch eine Bildschirmdrehung wenn die Tastatur angezeigt wird</string>
+    <string name="keyboard_rotation_timeout_title">Automatische Drehung Timeout</string>
+    <string name="keyboard_rotation_timeout_summary">Automatische Drehung <xliff:g id="rotate_timeout">%1$s</xliff:g> Sekunden nachdem Tastatur ausgeblendet wurde</string>
+    <string name="keyboard_rotation_dialog">Dieses Feature erzwingt vorübergehend die automatische Drehung während die Tastatur eingeblendet ist.  Dies hat keine Auswirkung wenn die Automatische Drehung der Tastatur bereits aktiviert wurde.</string>
+    <string name="show_enter_key_title">Eingabetaste anzeigen</string>
+    <string name="show_enter_key_summary">Erzwingt Anzeige der Eingabeteaste statt der Emoticon-Taste</string>
 </resources>
 
