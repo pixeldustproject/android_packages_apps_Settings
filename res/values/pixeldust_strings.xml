@@ -39,5 +39,8 @@
 
     <string name="substratum_title">Substratum</string>
 
+    <!-- Lockscreen charging current indicator  -->
+    <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
+    <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
 </resources>
 
