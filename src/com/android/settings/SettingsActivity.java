@@ -140,6 +140,7 @@ import java.util.List;
 import java.util.Set;
 
 import com.pixeldust.settings.PixelDustSettings;
+import com.pixeldust.settings.fragments.PieControl;
 
 public class SettingsActivity extends SettingsDrawerActivity
         implements PreferenceManager.OnPreferenceTreeClickListener,
@@ -370,7 +371,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
-            PixelDustSettings.class.getName()
+            PixelDustSettings.class.getName(),
+            PieControl.class.getName(),
     };
 
 
