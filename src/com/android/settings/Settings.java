@@ -163,4 +163,5 @@ public class Settings extends SettingsActivity {
 
     // PixelDust Additions.
     public static class PixelDustSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class PieControlSettingsActivity extends SettingsActivity { /* empty */ }
 }

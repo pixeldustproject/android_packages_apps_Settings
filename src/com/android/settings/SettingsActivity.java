@@ -134,6 +134,7 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 import com.pixeldust.settings.PixelDustSettings;
+import com.pixeldust.settings.fragments.PieControl;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -362,6 +363,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             PixelDustSettings.class.getName(),
+            PieControl.class.getName(),
     };
 
 
