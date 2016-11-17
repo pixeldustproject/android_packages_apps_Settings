@@ -34,6 +34,12 @@
             android:summary="@string/lockscreen_charging_current_summary"
             android:defaultValue="false" />
 
+        <SwitchPreference
+            android:key="quick_unlock_control"
+            android:title="@string/unlock_quick_unlock_control_title"
+            android:summary="@string/unlock_quick_unlock_control_summary"
+            android:persistent="false"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
