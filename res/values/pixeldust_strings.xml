@@ -49,6 +49,34 @@
     <string name="pd_category_title">Custom</string>
     <string name="pd_title">Pixel Dust Settings</string>
     <string name="pd_summary">ROM features &amp; customization</string>
+    <!-- PixelDust About -->
+    <string name="pixeldust_about">Pixel Dust ROM info</string>
+    <string name="pixeldust_about_summary">Updates, useful links, developers and contributors</string>
+    <string name="pixeldust_useful">Useful links</string>
+    <!-- update notifications -->
+    <string name="pixeldust_updates">Pixel Dust ROM update notifications</string>
+    <string name="update_dialog">Pick your notification service</string>
+    <string name="gplus_collection">Google+ collection</string>
+    <!-- social media -->
+    <string name="pixeldust_social">Pixel Dust ROM on social media</string>
+    <string name="social_dialog">Follow Pixel Dust ROM on social media</string>
+    <string name="gplus_community">Google+ community</string>
+    <!-- github -->
+    <string name="pixeldust_github">Pixel Dust Project GitHub Source</string>
+    <!-- donations -->
+    <string name="pixeldust_donate">Donate to support development</string>
+    <!-- developer/contributors -->
+    <string name="lead_dev">Lead Developer</string>
+    <string name="contributors">Team members</string>
+    <!-- spezi -->
+    <string name="spz">spezi77</string>
+    <string name="spz_sum">Pixel Dust Project Owner/maintainer</string>
+    <string name="spz_dialog">Follow spezi77</string>
+    <!-- possible profiles -->
+    <string name="gplus">Google+</string>
+    <string name="play_store">Play store</string>
+    <string name="twitter">Twitter</string>
+    <string name="xda">XDA-Developers</string>
 
     <string name="substratum_title">Substratum</string>
 
