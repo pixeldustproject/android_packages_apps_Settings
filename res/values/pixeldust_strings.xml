@@ -44,6 +44,7 @@
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
+    <string name="supersu_dashboard_summary">Manage root access</string>
 
     <!-- KernelAdiutor Mod header name -->
     <string name="performance_settings_title">Performance Settings</string>
