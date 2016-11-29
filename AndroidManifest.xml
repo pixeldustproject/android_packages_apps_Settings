@@ -1025,6 +1025,8 @@
                 android:value="com.android.settings.category.custom" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.SuperSU" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/supersu_dashboard_summary" />
         </activity>
 
         <activity android:name="Settings$DeviceInfoSettingsActivity"
