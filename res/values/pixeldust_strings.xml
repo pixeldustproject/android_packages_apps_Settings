@@ -79,6 +79,10 @@
     <string name="xda">XDA-Developers</string>
 
     <string name="substratum_title">Substratum</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Substratum icon overlays</string>
+    <string name="menu_show_substratum_icons">Show icon overlays</string>
+    <string name="menu_hide_substratum_icons">Hide icon overlays</string>
 
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
