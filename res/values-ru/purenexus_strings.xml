@@ -45,8 +45,8 @@
   <string name="adb_notify">Уведомление об отладке</string>
   <string name="adb_notify_summary">Показывать уведомление, когда отладка по USB или сети включена</string>
   <string name="adb_over_network">Отладки по сети</string>
-  <string name="adb_over_network_summary">Включить TCP/IP режим отладки через сетевые интерфейсы (Wi‑Fi и USB-сети). Этот параметр настройки сбрасывается при перезагрузке устройства</string>
-  <string name="adb_over_network_warning">ПРЕДУПРЕЖДЕНИЕ: Когда режим отладки по сети включён, ваш телефон доступен для взлома во всех подключённых сетях.\n\nИспользуйте эту функцию только когда подключены в надежные сети.\n\nВы действительно хотите включить эту функцию?</string>
+  <string name="adb_over_network_summary">Включить режим отладки через сетевые интерфейсы (Wi-Fi и USB-сети). Отладка отключается при перезагрузке устройства.</string>
+  <string name="adb_over_network_warning">ВНИМАНИЕ: когда включена отладка по сети, устройство открыто для неконтролируемого доступа из всех подключенных сетей!\n\nИспользуйте эту функцию только при подключении к доверенным сетям.\n\nДействительно включить эту функцию?</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Пароль для резервного копирования</string>
   <!-- Force authorize substratum packages -->
