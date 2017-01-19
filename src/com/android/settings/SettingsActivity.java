@@ -236,6 +236,10 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String KA_FRAGMENT = "com.android.settings.PerformanceSettings";
 
+    public static final String KEY_HIDE_SUMMARY = "hide_summary";
+    public static final String KEY_COLUMNS_COUNT = "columns_count";
+    public static final String APP_PREFERENCES_NAME = "app_settings";
+
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -380,6 +384,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private SharedPreferences mDevelopmentPreferences;
     private SharedPreferences.OnSharedPreferenceChangeListener mDevelopmentPreferencesListener;
+    private SharedPreferences mAppPreferences;
 
     private boolean mBatteryPresent = true;
     private BroadcastReceiver mBatteryInfoReceiver = new BroadcastReceiver() {
@@ -549,6 +554,8 @@ public class SettingsActivity extends SettingsDrawerActivity
         }
 
         mDevelopmentPreferences = getSharedPreferences(DevelopmentSettings.PREF_FILE,
+                Context.MODE_PRIVATE);
+        mAppPreferences = getSharedPreferences(APP_PREFERENCES_NAME,
                 Context.MODE_PRIVATE);
 
         // Getting Intent properties can only be done after the super.onCreate(...)
@@ -1372,5 +1379,39 @@ public class SettingsActivity extends SettingsDrawerActivity
                     PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.columns_menu:
+                int columnsCount = mAppPreferences.getInt(KEY_COLUMNS_COUNT, 1);
+                if (columnsCount == 1) {
+                    mAppPreferences.edit().putInt(KEY_COLUMNS_COUNT, 2).commit();
+                } else {
+                    mAppPreferences.edit().putInt(KEY_COLUMNS_COUNT, 1).commit();
+                }
+                return true;
+            case R.id.hide_summary_menu:
+                boolean hideSummary = mAppPreferences.getBoolean(KEY_HIDE_SUMMARY, false);
+                mAppPreferences.edit().putBoolean(KEY_HIDE_SUMMARY, !hideSummary).commit();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem columnMenuItem = menu.findItem(R.id.columns_menu);
+        if (columnMenuItem != null) {
+            int columnsCount = mAppPreferences.getInt(KEY_COLUMNS_COUNT, 1);
+            columnMenuItem.setChecked(columnsCount != 1);
+        }
+        MenuItem hideSummaryMenu = menu.findItem(R.id.hide_summary_menu);
+        if (hideSummaryMenu != null) {
+            boolean hideSummary = mAppPreferences.getBoolean(KEY_HIDE_SUMMARY, false);
+            hideSummaryMenu.setChecked(hideSummary);
+        }
+        return true;
     }
 }
