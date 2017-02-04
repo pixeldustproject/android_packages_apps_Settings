@@ -39,6 +39,10 @@
     <!-- SuperSU -->
     <string name="supersu_dashboard_summary">Root-Zugriff steuern</string>
 
+    <!-- Magisk Manager header name -->
+    <string name="magisk_title">Magisk Manager</string>
+    <string name="magisk_summary">Module und Systemeinstellungen verwalten</string>
+
     <!-- KernelAdiutor Mod header name -->
     <string name="performance_settings_title">Leistungseinstellungen</string>
     <string name="performance_settings_summary">Kernelparameter &amp; Leistung steuern</string>
