@@ -72,5 +72,34 @@
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Sperrbildschirm Ladestromanzeige</string>
     <string name="lockscreen_charging_current_summary">Ausgehandelte Ladestromstärke und Spannung auf Sperrbildschirm anzeigen</string>
+
+    <!-- Doze options -->
+    <string name="display_category_doze_options_title">Inaktivitätsdisplay-Einstellungen (Doze)</string>
+    <string name="doze_settings_title">Erweiterte Inaktivitätsdisplay-Einstelllungen</string>
+    <string name="doze_fade_in_pickup_title">Inaktivitätsdisplay-Einblendzeit (aufheben)</string>
+    <string name="doze_fade_in_pickup_summary">Zeitdauer für welche Benachrichtigungen beim Aufheben eingeblendet werden (Standard 100)</string>
+    <string name="doze_fade_in_doubletap_title">Inaktivitätsdisplay-Einblendzeit (doppeltes Antippen)</string>
+    <string name="doze_fade_in_doubletap_summary">Zeitdauer für welche Benachrichtigungen beim doppelten Antippen eingeblendet werden (Standard 900)</string>
+    <string name="doze_timeout_title">Inaktivitätsdisplay-Zeitdauer</string>
+    <string name="doze_timeout_summary">Zeitdauer für welche der Bildschirm bei Benachrichtigungen anbleibt (Standard 6000)</string>
+    <string name="doze_fade_out_title">Inaktivitätsdisplay-Ausblendzeit</string>
+    <string name="doze_fade_out_summary">Zeitdauer nach welcher Benachrichtigungen ausgeblendet werden (Standard 600)</string>
+    <string name="doze_wakeup_doubletap_title">Doppeltes Antippen zum Einschalten</string>
+    <string name="doze_wakeup_doubletap_summary_on">Doppeltes Antippen im Inaktivitätsdisplay-Modus, um das Gerät einzuschalten</string>
+    <string name="doze_wakeup_doubletap_summary_off">Einfaches Antippen im Inaktivitätsdisplay-Modus, um das Gerät einzuschalten (Standard)</string>
+    <string name="doze_trigger_pickup_title">Auslösen durch Aufheben des Gerätes</string>
+    <string name="doze_trigger_pickup_summary_on">Aufheben wird als Auslöser genutzt (Standard)</string>
+    <string name="doze_trigger_pickup_summary_off">Aufheben wird nicht als Auslöser genutzt</string>
+    <string name="doze_trigger_sigmotion_title">Auslösen durch eine deutliche Bewegung</string>
+    <string name="doze_trigger_sigmotion_summary_on">Eine deutliche Bewegung wird als Auslöser genutzt (Standard)</string>
+    <string name="doze_trigger_sigmotion_summary_off">Eine deutliche Bewegung wird nicht als Auslöser genutzt</string>
+    <string name="doze_trigger_doubletap_title">Auslösen durch doppeltes Antippen</string>
+    <string name="doze_trigger_doubletap_summary_on">Doppeltes Antippen wird als Auslöser genutzt</string>
+    <string name="doze_trigger_doubletap_summary_off">Doppeltes Antippen wird als Auslöser genutzt (Standard)</string>
+    <string name="doze_trigger_notification_title">Auslösen durch Eingang einer Benachrichtigung</string>
+    <string name="doze_trigger_notification_summary_on">Eingang einer Benachrichtigung wird als Auslöser genutzt (Standard)</string>
+    <string name="doze_trigger_notification_summary_off">Eingang einer Benachrichtigung wird nicht als Auslöser genutzt</string>
+    <string name="doze_brightness_title">Inaktivitätsdisplay-Helligkeit</string>
+    <string name="doze_brightness_summary">Helligkeit des Inaktivitätsdisplay (% der maximal erlaubten Helligkeit)</string>
 </resources>
 
