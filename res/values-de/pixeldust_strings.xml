@@ -32,6 +32,10 @@
     <string name="changelog_summary">Seit dem letzten Update</string>
     <string name="changelog_error">Anzeige der Änderungshistorie nicht möglich</string>
 
+    <!-- Substratum -->
+    <string name="substratum_title">Substratum</string>
+    <string name="substratum_dashboard_summary">Theme des Gerätes anpassen</string>
+
     <!-- SuperSU -->
     <string name="supersu_dashboard_summary">Root-Zugriff steuern</string>
 

@@ -201,6 +201,8 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
                 android:value="com.android.settings.category.custom" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/substratum_dashboard_summary" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.Substratum" />
         </activity>
