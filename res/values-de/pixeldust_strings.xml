@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017 The PixelDust Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- PixelDust build date-->
+    <string name="build_date">PixelDust Build Datum</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+
+    <!-- UBER Compiler -->
+    <string name="build_compiler_gcc">GCC Version</string>
+    <string name="build_compiler_default">Unbekannt</string>
+
+    <!-- UBER Compiler -->
+    <string name="build_compiler_clang">Clang Version</string>
+    <string name="build_compiler_default">Unbekannt</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Änderungshistorie</string>
+    <string name="changelog_summary">Seit dem letzten Update</string>
+    <string name="changelog_error">Anzeige der Änderungshistorie nicht möglich</string>
+
+    <!-- Vendor version -->
+    <string name="vendor_version">Hersteller Version</string>
+    <string name="vendor_version_default">Unbekannt</string>
+
+   <!-- Phone info shortcut -->
+    <string name="device_info_title">Geräteinformationen</string>
+
+    <!-- Dev Options Enabled by Default -->
+    <string name="show_dev_already_enabled">Nicht nötig da die Entwickleroptionen bereits standardmäßig aktiviert sind.</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Main list strings -->
+    <string name="pd_category_title">Personalisierung</string>
+    <string name="pd_title">Pixel Dust Einstellungen</string>
+    <string name="pd_summary">ROM Funktionen &amp; Personalisierung</string>
+    <!-- PixelDust About -->
+    <string name="pixeldust_about">Pixel Dust ROM Info</string>
+    <string name="pixeldust_about_summary">Updates, nützliche Links, Entwickler und Mitwirkende</string>
+    <string name="pixeldust_useful">Nützliche Links</string>
+    <!-- update notifications -->
+    <string name="pixeldust_updates">Pixel Dust ROM Update-Benachrichtigungen</string>
+    <string name="update_dialog">Wähle einen Benachrichtigungsdienst</string>
+    <string name="gplus_collection">Google+ Sammlungen</string>
+    <!-- social media -->
+    <string name="pixeldust_social">Pixel Dust ROM in sozialen Netzwerken</string>
+    <string name="social_dialog">Folge Pixel Dust ROM in sozialen Netzwerken</string>
+    <string name="gplus_community">Google+ Community</string>
+    <!-- github -->
+    <string name="pixeldust_github">Pixel Dust Project auf GitHub</string>
+    <!-- donations -->
+    <string name="pixeldust_donate">Spende zur Unterstützung der Weiterentwicklung</string>
+    <!-- developer/contributors -->
+    <string name="lead_dev">Hauptentwickler</string>
+    <string name="contributors">Team Mitglieder</string>
+    <!-- spezi -->
+    <string name="spz">spezi77</string>
+    <string name="spz_sum">Pixel Dust Inhaber</string>
+    <string name="spz_dialog">Folge spezi77</string>
+    <!-- possible profiles -->
+    <string name="gplus">Google+</string>
+    <string name="play_store">Google Play</string>
+    <string name="twitter">Twitter</string>
+    <string name="xda">XDA-Developers</string>
+
+    <string name="substratum_title">Substratum</string>
+
+    <!-- Lockscreen charging current indicator  -->
+    <string name="lockscreen_charging_current_title">Sperrbildschirm Ladestromanzeige</string>
+    <string name="lockscreen_charging_current_summary">Ausgehandelte Ladestromstärke und Spannung auf Sperrbildschirm anzeigen</string>
+
+    <!-- Gesture Settings -->
+    <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+    <string name="double_twist_for_camera_mode_summary_pn">Doppeldrehung schlatet den Selfie-Modus in der Google Camera ein</string>
+
+    <!-- Development Settings -->
+    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+    <string name="local_backup_password_title">Desktop Backup Passwort</string>
+</resources>
+
