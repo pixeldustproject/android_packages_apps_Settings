@@ -47,6 +47,7 @@
 
     <!-- KernelAdiutor Mod header name -->
     <string name="performance_settings_title">Performance Settings</string>
+    <string name="performance_settings_summary">Manage kernel parameters &amp; performance</string>
 
     <!-- Main list strings -->
     <string name="pd_category_title">Custom</string>
