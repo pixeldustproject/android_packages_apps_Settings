@@ -2484,6 +2484,15 @@
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/pd_summary" />
         </activity>
+        <activity
+            android:name="com.pixeldust.settings.fragments.SubActivity"
+            android:theme="@style/PreferenceTheme">
+        </activity>
+        <activity
+            android:name="com.pixeldust.settings.fragments.SlimRecentAppSidebarActivity"
+            android:theme="@style/PreferenceTheme"
+            android:label="@string/recent_app_sidebar_title">
+        </activity>
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
