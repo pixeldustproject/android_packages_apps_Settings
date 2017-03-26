@@ -2959,18 +2959,6 @@
                 android:resource="@string/wifi_calling_suggestion_summary" />
         </activity>
 
-        <!-- Ambient settings activity. -->
-        <activity android:name="Settings$AmbientSettingsActivity"
-                android:label="@string/doze_settings"
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.screwd.AmbientSettings" />
-        </activity>
-
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"
             android:authorities="com.android.settings"
