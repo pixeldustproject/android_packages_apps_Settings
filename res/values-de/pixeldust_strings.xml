@@ -32,6 +32,9 @@
     <string name="changelog_summary">Seit dem letzten Update</string>
     <string name="changelog_error">Anzeige der Änderungshistorie nicht möglich</string>
 
+    <!-- SuperSU -->
+    <string name="supersu_dashboard_summary">Root-Zugriff steuern</string>
+
     <!-- KernelAdiutor Mod header name -->
     <string name="performance_settings_title">Leistungseinstellungen</string>
     <string name="performance_settings_summary">Kernelparameter &amp; Leistung steuern</string>
@@ -69,37 +72,155 @@
     <string name="twitter">Twitter</string>
     <string name="xda">XDA-Developers</string>
 
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Substratum Symbol-Überlagerungen</string>
+    <string name="menu_show_substratum_icons">Zeige Symbol-Überlagerungen</string>
+    <string name="menu_hide_substratum_icons">Verstecke Symbol-Überlagerungen</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Design-Apps aus unbekannten Quellen erlauben</string>
+    <string name="force_authorize_substratum_packages_summary">Erzwingt die Genehmigung für alle Design Anwendungen</string>
+
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Sperrbildschirm Ladestromanzeige</string>
     <string name="lockscreen_charging_current_summary">Ausgehandelte Ladestromstärke und Spannung auf Sperrbildschirm anzeigen</string>
 
+    <!-- Gesture Settings -->
+    <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+    <string name="double_twist_for_camera_mode_summary_pn">Um in und aus dem Selfie Modus in der Google Kamera zu wechseln, drehe das Gerät 2 mal schnell hintereinander, wenn du dich in der App befindest</string>
+
+    <!-- Development Settings -->
+    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+    <string name="local_backup_password_title">Desktop Backup Passwort</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot-Auslöserton</string>
+
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
+    <string name="unlock_quick_unlock_control_summary">Automatisch Entsperren wenn die richtige PIN eingegeben wurde\nHinweis: funktioniert nur bei 4-stelliger PIN!</string>
+
+    <!-- App Ops Settings -->
+
+    <!-- [CHAR LIMIT=NONE] App ops settings summary, on main settings screen. If clicked, the user is taken to a settings screen for app operations -->
+    <string name="app_ops_settings_summary">App Berechtigungen anzeigen und ändern</string>
+
+    <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Standort</string>
+    <string name="app_ops_cat_personal">Persönliches</string>
+    <string name="app_ops_cat_messaging">Nachrichten</string>
+    <string name="app_ops_cat_media">Medien</string>
+    <string name="app_ops_cat_device">Gerät</string>
+    <string name="app_ops_cat_bootup">Boot-Vorgang</string>
+
+    <!-- [CHAR LIMIT=NONE] App ops labels -->
+    <string name="app_ops_access_camera">Kamera</string>
+    <string name="app_ops_access_location">Standort</string>
+    <string name="app_ops_access_notifications">Benachrichtigungen</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">Autostart</string>
+    <string name="app_ops_delete_call_log">Anrufhistorie löschen</string>
+    <string name="app_ops_delete_contacts">Kontakte löschen</string>
+    <string name="app_ops_delete_mms">MMS löschen</string>
+    <string name="app_ops_delete_sms">SMS löschen</string>
+    <string name="app_ops_draw_on_top">In den Vordergrund bringen</string>
+    <string name="app_ops_get_usage_stats">Nutzungsstatistiken abrufen</string>
+    <string name="app_ops_keep_device_awake">Gerät aktiv halten</string>
+    <string name="app_ops_make_phone_call">Anrufe tätigen</string>
+    <string name="app_ops_modify_calendar">Kalender aktualisieren</string>
+    <string name="app_ops_modify_call_log">Anrufhistorie aktualisieren</string>
+    <string name="app_ops_modify_clipboard">Zwischenablage aktualisieren</string>
+    <string name="app_ops_modify_contacts">Kontakte aktualisieren</string>
+    <string name="app_ops_modify_settings">Systemeinstellungen aktualisieren</string>
+    <string name="app_ops_mute_unmute_microphone">Mikrofon stumm-/aktivschalten</string>
+    <string name="app_ops_play_audio">Audio wiedergeben</string>
+    <string name="app_ops_post_notification">Benachrichtigung absetzen</string>
+    <string name="app_ops_project_media">Medien wiedergeben</string>
+    <string name="app_ops_read_calendar">Kalender abrufen</string>
+    <string name="app_ops_read_call_log">Anrufhistorie lesen</string>
+    <string name="app_ops_read_clipboard">Zwischenablage abrufen</string>
+    <string name="app_ops_read_contacts">Kontakte abrufen</string>
+    <string name="app_ops_read_mms">MMS lesen</string>
+    <string name="app_ops_read_sms">SMS lesen</string>
+    <string name="app_ops_receive_sms">SMS empfangen</string>
+    <string name="app_ops_record_audio">Audio aufnehmen</string>
+    <string name="app_ops_send_mms">MMS absenden</string>
+    <string name="app_ops_send_sms">SMS absenden</string>
+    <string name="app_ops_toast_window">Toast Nachrichten</string>
+    <string name="app_ops_use_alarm_volume">Alarm Lautstärke</string>
+    <string name="app_ops_use_audio_focus">Audio Fokus</string>
+    <string name="app_ops_use_bluetooth_volume">Bluetooth Lautstärke</string>
+    <string name="app_ops_use_master_volume">Generelle Lautstärke</string>
+    <string name="app_ops_use_media_buttons">Medien buttons</string>
+    <string name="app_ops_use_media_volume">Medien Lautstärke</string>
+    <string name="app_ops_use_notification_volume">Benachrichtigung Lautstärke</string>
+    <string name="app_ops_use_ring_volume">Klingelton Lautstärke</string>
+    <string name="app_ops_use_vibrate">Haptisches Feedback</string>
+    <string name="app_ops_use_voice_volume">Sprachanruf Lautstärke</string>
+    <string name="app_ops_write_mms">MMS schreiben</string>
+    <string name="app_ops_write_sms">SMS schreiben</string>
+    <string name="app_ops_use_fingerprint">Fingerabdruck</string>
+    <string name="app_ops_add_voicemail">Voicemail</string>
+    <string name="app_ops_read_phone_state">Telefonstatistiken abrufen</string>
+    <string name="app_ops_scan_wifi">Nach WiFi Netzwerken suchen</string>
+    <string name="app_ops_change_wallpaper">Hintergrundbild ändern</string>
+    <string name="app_ops_assist_structure">Bildschirmkontext</string>
+    <string name="app_ops_assist_screenshot">Bildschirmfoto</string>
+    <string name="app_ops_use_body_sensors">Körpersensoren</string>
+    <string name="app_ops_read_cell_broadcasts">Datennutzung</string>
+    <string name="app_ops_mock_location">Falschen Standort</string>
+    <string name="app_ops_read_external_storage">Ext. Speicher lesen</string>
+    <string name="app_ops_write_external_storage">Ext. Speicher schreiben</string>
+    <string name="app_ops_turn_on_screen">Bildschirm einschalten</string>
+    <string name="app_ops_get_accounts">Konten des Geräts</string>
+    <string name="app_ops_run_in_background">Als Hintergrundprozess laufen</string>
+    <string name="app_ops_boot_completed">Autostart</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">Helligkeit</string>
+    <string name="night_brightness_value_title">Nachtlicht-Helligkeit</string>
+    <string name="night_brightness_text">Wenn das Nachtlicht aktiviert ist, automatisch die gewünschte Helligkeitsstufe einstellen.</string>
+    <string name="night_bright_disabled">Deaktiviert</string>
+    <string name="night_bright_min">Minimale Helligkeit</string>
+    <string name="night_bright_low">Niedrige Helligkeit</string>
+    <string name="night_bright_medium">Mittlere Helligkeit</string>
+
     <!-- Doze options -->
-    <string name="display_category_doze_options_title">Inaktivitätsdisplay-Einstellungen (Doze)</string>
-    <string name="doze_settings_title">Erweiterte Inaktivitätsdisplay-Einstelllungen</string>
-    <string name="doze_fade_in_pickup_title">Inaktivitätsdisplay-Einblendzeit (aufheben)</string>
-    <string name="doze_fade_in_pickup_summary">Zeitdauer für welche Benachrichtigungen beim Aufheben eingeblendet werden (Standard 100)</string>
-    <string name="doze_fade_in_doubletap_title">Inaktivitätsdisplay-Einblendzeit (doppeltes Antippen)</string>
-    <string name="doze_fade_in_doubletap_summary">Zeitdauer für welche Benachrichtigungen beim doppelten Antippen eingeblendet werden (Standard 900)</string>
-    <string name="doze_timeout_title">Inaktivitätsdisplay-Zeitdauer</string>
+    <string name="display_category_doze_options_title">Schlummern-Modus (Doze)</string>
+    <string name="doze_settings_title">Schlummern-Modus konfigurieren</string>
+    <string name="doze_fade_in_pickup_title">Einblenden (Gerät hochnehmen)</string>
+    <string name="doze_fade_in_pickup_summary">Zeitdauer für welche Benachrichtigungen beim Hochnehmen sichtbar sind (Standard 100)</string>
+    <string name="doze_fade_in_doubletap_title">Einblenden (doppeltes Antippen)</string>
+    <string name="doze_fade_in_doubletap_summary">Zeitdauer für welche Benachrichtigungen beim doppelten Antippen sichtbar sind (Standard 900)</string>
+    <string name="doze_timeout_title">Sichtbare Dauer</string>
     <string name="doze_timeout_summary">Zeitdauer für welche der Bildschirm bei Benachrichtigungen anbleibt (Standard 6000)</string>
-    <string name="doze_fade_out_title">Inaktivitätsdisplay-Ausblendzeit</string>
+    <string name="doze_fade_out_title">Ausblenden</string>
     <string name="doze_fade_out_summary">Zeitdauer nach welcher Benachrichtigungen ausgeblendet werden (Standard 600)</string>
     <string name="doze_wakeup_doubletap_title">Doppeltes Antippen zum Einschalten</string>
-    <string name="doze_wakeup_doubletap_summary_on">Doppeltes Antippen im Inaktivitätsdisplay-Modus, um das Gerät einzuschalten</string>
-    <string name="doze_wakeup_doubletap_summary_off">Einfaches Antippen im Inaktivitätsdisplay-Modus, um das Gerät einzuschalten (Standard)</string>
-    <string name="doze_trigger_pickup_title">Auslösen durch Aufheben des Gerätes</string>
-    <string name="doze_trigger_pickup_summary_on">Aufheben wird als Auslöser genutzt (Standard)</string>
-    <string name="doze_trigger_pickup_summary_off">Aufheben wird nicht als Auslöser genutzt</string>
-    <string name="doze_trigger_sigmotion_title">Auslösen durch eine deutliche Bewegung</string>
-    <string name="doze_trigger_sigmotion_summary_on">Eine deutliche Bewegung wird als Auslöser genutzt (Standard)</string>
-    <string name="doze_trigger_sigmotion_summary_off">Eine deutliche Bewegung wird nicht als Auslöser genutzt</string>
+    <string name="doze_wakeup_doubletap_summary_on">Doppeltes Antippen im Inaktivitätsmodus, um das Gerät einzuschalten</string>
+    <string name="doze_wakeup_doubletap_summary_off">Einfaches Antippen im Inaktivitätsmodus, um das Gerät einzuschalten (Standard)</string>
+    <string name="doze_trigger_pickup_title">Auslösen durch Bewegung</string>
+    <string name="doze_trigger_pickup_summary_on">Das Pulsieren wird durch den Bewegungssensor ausgelöst (Standard)</string>
+    <string name="doze_trigger_pickup_summary_off">Der Bewegungssensor wird nicht als Auslöser benutzt</string>
+    <string name="doze_trigger_sigmotion_title">Auslösen durch Schütteln</string>
+    <string name="doze_trigger_sigmotion_summary_on">Das Pulsieren wird durch den Schüttelsensor ausgelöst (Standard)</string>
+    <string name="doze_trigger_sigmotion_summary_off">Der Schüttelsensor wird nicht als Auslöser benutzt</string>
     <string name="doze_trigger_doubletap_title">Auslösen durch doppeltes Antippen</string>
-    <string name="doze_trigger_doubletap_summary_on">Doppeltes Antippen wird als Auslöser genutzt</string>
-    <string name="doze_trigger_doubletap_summary_off">Doppeltes Antippen wird als Auslöser genutzt (Standard)</string>
-    <string name="doze_trigger_notification_title">Auslösen durch Eingang einer Benachrichtigung</string>
-    <string name="doze_trigger_notification_summary_on">Eingang einer Benachrichtigung wird als Auslöser genutzt (Standard)</string>
-    <string name="doze_trigger_notification_summary_off">Eingang einer Benachrichtigung wird nicht als Auslöser genutzt</string>
-    <string name="doze_brightness_title">Inaktivitätsdisplay-Helligkeit</string>
-    <string name="doze_brightness_summary">Helligkeit des Inaktivitätsdisplay (% der maximal erlaubten Helligkeit)</string>
+    <string name="doze_trigger_doubletap_summary_on">Das Pulsieren wird durch doppeltes Antippen ausgelöst (Standard)</string>
+    <string name="doze_trigger_doubletap_summary_off">Doppeltes Antippen wird nicht als Auslöser benutzt</string>
+    <string name="doze_trigger_notification_title">Auslösen durch Benachrichtigung</string>
+    <string name="doze_trigger_notification_summary_on">Das Pulsieren wird durch anstehende Benachrichtigungen ausgelöst (Standard)</string>
+    <string name="doze_trigger_notification_summary_off">Benachrichtigungen werden nicht als Auslöser benutzt</string>
+    <string name="doze_brightness_title">Helligkeitsstufe</string>
+    <string name="doze_brightness_summary">Helligkeit des Pulsierens (in % des maximal zulässigen Helligkeitswerts)</string>
+
+    <!-- Doze invert -->
+    <string name="doze_notification_color_invert_title">Benachrichtigungen invertieren</string>
+    <string name="doze_notification_color_invert_summary_off">Benachrichtigungen werden nicht invertiert. Für dunkle Designs verwenden.</string>
+    <string name="doze_notification_color_invert_summary_on">Benachrichtigungen werden invertiert. Für Standard/helle Designs verwenden.</string>
+
+    <!-- Dynamic notification tint -->
+    <string name="notification_tint_title">Benachrichtigungstitel dynamisch färben</string>
+    <string name="notification_tint_summary_off">Die Titelfarbe von Benachrichtigungen wird durch das Designthema vorgegeben</string>
+    <string name="notification_tint_summary_on">Die Titelfarbe von Benachrichtigungen wird durch die Icon-Farbe der App vorgegeben</string>
 </resources>
 
