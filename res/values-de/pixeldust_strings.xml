@@ -270,4 +270,8 @@
     <string name="fp_swipe_call_actions_disabled">Deaktiviert</string>
     <string name="fp_swipe_call_actions_updown_answer_call">Nach oben oder unten wischen um eingehende Anrufe anzunehmen</string>
     <string name="fp_swipe_call_actions_up_answer_down_silence">Nach oben wischen um eingehende Anrufe anzunehmen, nach unten zum stummschalten</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Versehentliches Einschalten des Bildschirms verhindern</string>
+    <string name="proximity_wake_summary">Den Näherungssensor vor Einschalten des Bildschirms prüfen</string>
 </resources>
