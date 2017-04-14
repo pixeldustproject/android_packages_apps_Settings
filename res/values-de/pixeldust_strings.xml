@@ -235,5 +235,7 @@
     <string name="battery_stats_reset">Statistiken zurücksetzen</string>
     <string name="battery_stats_message">Akkuverbrauchsstatisken werden zurückgesetzt</string>
     <string name="ok_string">OK</string>
+
+    <string name="easter_settings_title">Frohe Ostern</string>
 </resources>
 
