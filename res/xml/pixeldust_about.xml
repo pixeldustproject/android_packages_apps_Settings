@@ -65,6 +65,17 @@
     </PreferenceCategory>
 
     <!-- Contributors -->
+    <PreferenceCategory
+        android:key="contributors"
+        android:title="@string/contributors">
+
+        <Preference
+            android:key="dragos281993"
+            android:icon="@drawable/ic_dragos"
+            android:title="@string/dragos"
+            android:summary="@string/dragos_sum"/>
+    </PreferenceCategory>
+
     <!--PreferenceCategory
         android:key="contributors"
         android:title="@string/contributors">

@@ -79,12 +79,16 @@
     <!-- donations -->
     <string name="pixeldust_donate">Donate to support development</string>
     <!-- developer/contributors -->
-    <string name="lead_dev">Lead Developer</string>
+    <string name="lead_dev">Lead developer</string>
     <string name="contributors">Team members</string>
     <!-- spezi -->
     <string name="spz">spezi77</string>
-    <string name="spz_sum">Pixel Dust Project Owner/maintainer</string>
+    <string name="spz_sum">Pixel Dust Project Owner/maintainer for marlin/sailfish</string>
     <string name="spz_dialog">Follow spezi77</string>
+    <!-- dragos -->
+    <string name="dragos">Funny-Bunny</string>
+    <string name="dragos_sum">Developer/maintainer for bullhead</string>
+    <string name="dragos_dialog">Follow Funny-Bunny</string>
     <!-- possible profiles -->
     <string name="gplus">Google+</string>
     <string name="play_store">Play store</string>

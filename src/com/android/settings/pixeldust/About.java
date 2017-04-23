@@ -87,6 +87,23 @@ public class About extends SettingsPreferenceFragment {
                 }
             });
             builder.show();
+        } else if (preference.getKey().equals("dragos281993")) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setTitle(R.string.dragos_dialog);
+            builder.setItems(R.array.dragos_entries, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    String [] dragosValues = {
+                        "http://forum.xda-developers.com/member.php?u=5796730"};
+                    Intent link = new Intent(Intent.ACTION_VIEW);
+                    String item = dragosValues[which];
+                    link.setData(Uri.parse(item));
+                    try {
+                        startActivity(link);
+                    } catch (android.content.ActivityNotFoundException e) {
+                    }
+                }
+            });
+            builder.show();
         }
         return super.onPreferenceTreeClick(preference);
     }
