@@ -66,14 +66,19 @@
     <!-- github -->
     <string name="pixeldust_github">Pixel Dust Project auf GitHub</string>
     <!-- donations -->
-    <string name="pixeldust_donate">Spende zur Unterstützung der Weiterentwicklung</string>
+    <string name="pixeldust_donate">Spende für die ROM-Entwicklung</string>
     <!-- developer/contributors -->
     <string name="lead_dev">Hauptentwickler</string>
     <string name="contributors">Team Mitglieder</string>
     <!-- spezi -->
-    <string name="spz">spezi77</string>
-    <string name="spz_sum">Pixel Dust Inhaber</string>
+    <string name="spz_sum">Pixel Dust Inhaber/Betreuer von marlin/sailfish</string>
     <string name="spz_dialog">Folge spezi77</string>
+    <!-- dragos -->
+    <string name="dragos_sum">Entwickler/Betreuer von bullhead</string>
+    <string name="dragos_dialog">Folge Funny-Bunny</string>
+    <!-- nitin -->
+    <string name="nitin_sum">Entwickler/Betreuer von mako</string>
+    <string name="nitin_dialog">Folge nitin.chobhe</string>
     <!-- possible profiles -->
     <string name="gplus">Google+</string>
     <string name="play_store">Google Play</string>

@@ -18,12 +18,13 @@
 
     <!-- update notifications -->
     <string-array name="update_entries">
-        <item>@string/gplus_collection</item>
+        <!--item>@string/gplus_collection</item-->
+        <item>@string/xda</item>
     </string-array>
 
     <!-- social media -->
     <string-array name="social_entries">
-        <item>@string/gplus_community</item>
+        <!--item>@string/gplus_community</item-->
         <item>@string/xda</item>
     </string-array>
 
