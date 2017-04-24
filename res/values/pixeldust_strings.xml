@@ -89,6 +89,10 @@
     <string name="dragos">Funny-Bunny</string>
     <string name="dragos_sum">Developer/maintainer for bullhead</string>
     <string name="dragos_dialog">Follow Funny-Bunny</string>
+    <!-- nitin -->
+    <string name="nitin">nitin.chobhe</string>
+    <string name="nitin_sum">Developer/maintainer for mako</string>
+    <string name="nitin_dialog">Follow nitin.chobhe</string>
     <!-- possible profiles -->
     <string name="gplus">Google+</string>
     <string name="play_store">Play store</string>
