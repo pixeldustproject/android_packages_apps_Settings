@@ -43,7 +43,7 @@ public class About extends SettingsPreferenceFragment {
             builder.setTitle(R.string.update_dialog);
             builder.setItems(R.array.update_entries, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
-                    String [] notificationValues = {"about:blank"};
+                    String [] notificationValues = {"https://forum.xda-developers.com/pixel-xl/development/rom-pixeldust-marlin-t3581750"};
                     Intent link = new Intent(Intent.ACTION_VIEW);
                     String item = notificationValues[which];
                     link.setData(Uri.parse(item));
@@ -59,8 +59,7 @@ public class About extends SettingsPreferenceFragment {
             builder.setTitle(R.string.social_dialog);
             builder.setItems(R.array.social_entries, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
-                    String [] socialValues = {"about:blank",
-                        "about:blank"};
+                    String [] socialValues = {"https://forum.xda-developers.com/pixel-xl/development/rom-pixeldust-marlin-t3581750"};
                     Intent link = new Intent(Intent.ACTION_VIEW);
                     String item = socialValues[which];
                     link.setData(Uri.parse(item));
