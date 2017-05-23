@@ -23,7 +23,9 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 import android.provider.Settings.Secure;
+import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -53,9 +55,12 @@ public class GestureSettings extends SettingsPreferenceFragment implements
     private static final String PREF_KEY_DOUBLE_TAP_POWER = "gesture_double_tap_power";
     private static final String PREF_KEY_DOUBLE_TWIST = "gesture_double_twist";
     private static final String PREF_KEY_SWIPE_DOWN_FINGERPRINT = "gesture_swipe_down_fingerprint";
+    private static final String PREF_QUICK_PULLDOWN_FP = "quick_pulldown_fp";
     private static final String DEBUG_DOZE_COMPONENT = "debug.doze.component";
 
     private List<GesturePreference> mPreferences;
+
+    private SwitchPreference mQuickPulldownFp;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -76,8 +81,15 @@ public class GestureSettings extends SettingsPreferenceFragment implements
         // Fingerprint slide for notifications
         if (isSystemUINavigationAvailable(context)) {
             addPreference(PREF_KEY_SWIPE_DOWN_FINGERPRINT, isSystemUINavigationEnabled(context));
+
+            mQuickPulldownFp = (SwitchPreference) findPreference(PREF_QUICK_PULLDOWN_FP);
+            mQuickPulldownFp.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN_FP, 0, UserHandle.USER_CURRENT) == 1);
+            mQuickPulldownFp.setOnPreferenceChangeListener(this);
+            mQuickPulldownFp.setEnabled(isSystemUINavigationEnabled(context));
         } else {
             removePreference(PREF_KEY_SWIPE_DOWN_FINGERPRINT);
+            removePreference(PREF_QUICK_PULLDOWN_FP);
         }
 
         // Double twist for camera mode
@@ -88,7 +100,6 @@ public class GestureSettings extends SettingsPreferenceFragment implements
         } else {
             removePreference(PREF_KEY_DOUBLE_TWIST);
         }
-
     }
 
     @Override
@@ -143,9 +154,14 @@ public class GestureSettings extends SettingsPreferenceFragment implements
         } else if (PREF_KEY_SWIPE_DOWN_FINGERPRINT.equals(key)) {
             Secure.putInt(getContentResolver(),
                     Secure.SYSTEM_NAVIGATION_KEYS_ENABLED, enabled ? 1 : 0);
+            mQuickPulldownFp.setEnabled(enabled);
         } else if (PREF_KEY_DOUBLE_TWIST.equals(key)) {
             Secure.putInt(getContentResolver(),
                     Secure.CAMERA_DOUBLE_TWIST_TO_FLIP_ENABLED, enabled ? 1 : 0);
+        } else if (PREF_QUICK_PULLDOWN_FP.equals(key)) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN_FP, enabled ? 1 : 0,
+                    UserHandle.USER_CURRENT);
         }
         return true;
     }

@@ -253,5 +253,8 @@
     <string name="keyboard_rotation_dialog">Dieses Feature erzwingt vorübergehend die automatische Drehung während die Tastatur eingeblendet ist.  Dies hat keine Auswirkung wenn die Automatische Drehung der Tastatur bereits aktiviert wurde.</string>
     <string name="show_enter_key_title">Eingabetaste anzeigen</string>
     <string name="show_enter_key_summary">Erzwingt Anzeige der Eingabeteaste statt der Emoticon-Taste</string>
-</resources>
 
+    <!-- Fingerprint Quick Pulldown -->
+    <string name="quick_pulldown_fp_title">Quick Pulldown per Fingerabdrucksensor</string>
+    <string name="quick_pulldown_fp_summary">Mit nur einem Swipe über den Fingerabdrucksensor die Schnelleinstellungen aufklappen</string>
+</resources>

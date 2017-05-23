@@ -282,5 +282,9 @@
     <string name="link_volume_option_title">Link ring and notification volume</string>
     <string name="notification_volume_option_title">Notification volume</string>
     <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+
+    <!-- Fingerprint Quick Pulldown -->
+    <string name="quick_pulldown_fp_title">Fingerprint quick pulldown</string>
+    <string name="quick_pulldown_fp_summary">Enable expanding the Quick Settings with only one swipe on the fingerprint sensor</string>
 </resources>
 
