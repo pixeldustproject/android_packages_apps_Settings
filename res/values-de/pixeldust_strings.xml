@@ -212,8 +212,11 @@
     <string name="doze_wakeup_doubletap_summary_on">Doppeltes Antippen im Inaktivitätsmodus, um das Gerät einzuschalten</string>
     <string name="doze_wakeup_doubletap_summary_off">Einfaches Antippen im Inaktivitätsmodus, um das Gerät einzuschalten (Standard)</string>
     <string name="doze_trigger_pickup_title">Auslösen durch Bewegung</string>
-    <string name="doze_trigger_pickup_summary_on">Das Pulsieren wird durch den Bewegungssensor ausgelöst (Standard)</string>
-    <string name="doze_trigger_pickup_summary_off">Der Bewegungssensor wird nicht als Auslöser benutzt</string>
+    <string name="doze_trigger_pickup_summary_on">Das Pulsieren wird durch den Bewegungssensor beim Aufheben ausgelöst (Standard)</string>
+    <string name="doze_trigger_pickup_summary_off">Der Bewegungssensor (Aufheben) wird nicht als Auslöser benutzt</string>
+    <string name="doze_trigger_tilt_title">Auslösen durch Neigen</string>
+    <string name="doze_trigger_tilt_summary_on">Das Pulsieren wird durch den Bewegungssensor beim Neigen ausgelöst (Standard)</string>
+    <string name="doze_trigger_tilt_summary_off">Der Bewegungssensor (Neigen) wird nicht als Auslöser benutzt</string>
     <string name="doze_trigger_sigmotion_title">Auslösen durch Schütteln</string>
     <string name="doze_trigger_sigmotion_summary_on">Das Pulsieren wird durch den Schüttelsensor ausgelöst (Standard)</string>
     <string name="doze_trigger_sigmotion_summary_off">Der Schüttelsensor wird nicht als Auslöser benutzt</string>
