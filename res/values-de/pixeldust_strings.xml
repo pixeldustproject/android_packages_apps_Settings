@@ -223,6 +223,12 @@
     <string name="doze_trigger_doubletap_title">Auslösen durch doppeltes Antippen</string>
     <string name="doze_trigger_doubletap_summary_on">Das Pulsieren wird durch doppeltes Antippen ausgelöst (Standard)</string>
     <string name="doze_trigger_doubletap_summary_off">Doppeltes Antippen wird nicht als Auslöser benutzt</string>
+    <string name="doze_trigger_hand_wave_title">Auslösen durch Handwinken</string>
+    <string name="doze_trigger_hand_wave_summary_on">Das Pulsieren wird bei einer Wink-Geste ausgelöst (Standard)</string>
+    <string name="doze_trigger_hand_wave_summary_off">Winken wird nicht als Auslöser benutzt</string>
+    <string name="doze_trigger_pocket_title">Auslösen bei der Entnahme aus der Tasche</string>
+    <string name="doze_trigger_pocket_summary_on">Das Pulsieren wird ausgelöst, wenn das Gerät aus der Tasche genommen wird (Standard)</string>
+    <string name="doze_trigger_pocket_summary_off">Die Entnahme aus der Tasche wird nicht als Auslöser benutzt</string>
     <string name="doze_trigger_notification_title">Auslösen durch Benachrichtigung</string>
     <string name="doze_trigger_notification_summary_on">Das Pulsieren wird durch anstehende Benachrichtigungen ausgelöst (Standard)</string>
     <string name="doze_trigger_notification_summary_off">Benachrichtigungen werden nicht als Auslöser benutzt</string>
