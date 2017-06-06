@@ -90,11 +90,6 @@
                 android:summaryOff="@string/notification_tint_summary_off"
                 android:defaultValue="true" />
 
-        <SwitchPreference
-                android:key="tap_to_wake"
-                android:title="@string/tap_to_wake"
-                android:summary="@string/tap_to_wake_summary" />
-
         <PreferenceScreen
                 android:key="font_size"
                 android:title="@string/title_font_size"
