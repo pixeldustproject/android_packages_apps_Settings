@@ -55,20 +55,17 @@ public class DozeSettingsFragment extends SettingsPreferenceFragment implements
     private static final String KEY_DOZE_TRIGGER_PICKUP = "doze_trigger_pickup";
     private static final String KEY_DOZE_TRIGGER_SIGMOTION = "doze_trigger_sigmotion";
     private static final String KEY_DOZE_TRIGGER_NOTIFICATION = "doze_trigger_notification";
-    private static final String KEY_DOZE_TRIGGER_DOUBLETAP = "doze_trigger_doubletap";
     private static final String KEY_DOZE_BRIGHTNESS = "doze_brightness";
 
     private static final String SYSTEMUI_METADATA_NAME = "com.android.systemui";
 
     private CustomSeekBarPreference mDozeFadeInPickup;
-    private CustomSeekBarPreference mDozeFadeInDoubleTap;
     private CustomSeekBarPreference mDozeTimeout;
     private CustomSeekBarPreference mDozeFadeOut;
     private SwitchPreference mDozeWakeupDoubleTap;
     private SwitchPreference mDozeTriggerPickup;
     private SwitchPreference mDozeTriggerSigmotion;
     private SwitchPreference mDozeTriggerNotification;
-    private SwitchPreference mDozeTriggerDoubleTap;
     private CustomSeekBarPreference mDozeBrightness;
 
     private AmbientDisplayConfiguration mConfig;
@@ -97,15 +94,6 @@ public class DozeSettingsFragment extends SettingsPreferenceFragment implements
         mDozeFadeInPickup = (CustomSeekBarPreference) findPreference(KEY_DOZE_FADE_IN_PICKUP);
         mDozeFadeInPickup.setOnPreferenceChangeListener(this);
 
-        // Doze fade in seekbar for doubletap
-        if (isDoubleTapSensorUsedByDefault(mConfig) || isTapToWakeAvailable(res)) {
-            mDozeFadeInDoubleTap =
-                    (CustomSeekBarPreference) findPreference(KEY_DOZE_FADE_IN_DOUBLETAP);
-            mDozeFadeInDoubleTap.setOnPreferenceChangeListener(this);
-        } else {
-            removePreference(KEY_DOZE_FADE_IN_DOUBLETAP);
-        }
-
         // Doze timeout seekbar
         mDozeTimeout = (CustomSeekBarPreference) findPreference(KEY_DOZE_TIMEOUT);
         mDozeTimeout.setOnPreferenceChangeListener(this);
@@ -131,15 +119,6 @@ public class DozeSettingsFragment extends SettingsPreferenceFragment implements
         } else {
             removePreference(KEY_DOZE_TRIGGER_SIGMOTION);
         }
-        if (isDoubleTapSensorUsedByDefault(mConfig) || isTapToWakeAvailable(res)) {
-            mDozeTriggerDoubleTap = (SwitchPreference) findPreference(KEY_DOZE_TRIGGER_DOUBLETAP);
-            mDozeTriggerDoubleTap.setOnPreferenceChangeListener(this);
-            if (!isTapToWakeEnabled() && !isDoubleTapSensorUsedByDefault(mConfig)) {
-                mDozeTriggerDoubleTap.setEnabled(false);
-            }
-        } else {
-            removePreference(KEY_DOZE_TRIGGER_DOUBLETAP);
-        }
         mDozeTriggerNotification = (SwitchPreference) findPreference(KEY_DOZE_TRIGGER_NOTIFICATION);
         mDozeTriggerNotification.setOnPreferenceChangeListener(this);
 
@@ -160,11 +139,6 @@ public class DozeSettingsFragment extends SettingsPreferenceFragment implements
             int dozeFadeInPickup = (Integer) newValue;
             Settings.System.putInt(getContentResolver(),
                     Settings.System.DOZE_FADE_IN_PICKUP, dozeFadeInPickup);
-        }
-        if (preference == mDozeFadeInDoubleTap) {
-            int dozeFadeInDoubleTap = (Integer) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.DOZE_FADE_IN_DOUBLETAP, dozeFadeInDoubleTap);
         }
         if (preference == mDozeTimeout) {
             int dozeTimeout = (Integer) newValue;
@@ -190,11 +164,6 @@ public class DozeSettingsFragment extends SettingsPreferenceFragment implements
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(),
                     Settings.System.DOZE_TRIGGER_SIGMOTION, value ? 1 : 0);
-        }
-        if (preference == mDozeTriggerDoubleTap) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.DOZE_TRIGGER_DOUBLETAP, value ? 1 : 0);
         }
         if (preference == mDozeTriggerNotification) {
             boolean value = (Boolean) newValue;
@@ -224,11 +193,6 @@ public class DozeSettingsFragment extends SettingsPreferenceFragment implements
                     Settings.System.DOZE_FADE_IN_PICKUP, dozeFadeInDefault(activity, true));
             mDozeFadeInPickup.setValue(statusDozeFadeInPickup);
         }
-        if (mDozeFadeInDoubleTap != null) {
-            final int statusDozeFadeInDoubleTap = Settings.System.getInt(getContentResolver(),
-                    Settings.System.DOZE_FADE_IN_DOUBLETAP, dozeFadeInDefault(activity, false));
-            mDozeFadeInDoubleTap.setValue(statusDozeFadeInDoubleTap);
-        }
         if (mDozeTimeout != null) {
             final int statusDozeTimeout = Settings.System.getInt(getContentResolver(),
                     Settings.System.DOZE_TIMEOUT, dozeTimeoutDefault(activity));
@@ -254,11 +218,6 @@ public class DozeSettingsFragment extends SettingsPreferenceFragment implements
                     Settings.System.DOZE_TRIGGER_SIGMOTION, 1);
             mDozeTriggerSigmotion.setChecked(value != 0);
         }
-        if (mDozeTriggerDoubleTap != null) {
-            int value = Settings.System.getInt(getContentResolver(),
-                    Settings.System.DOZE_TRIGGER_DOUBLETAP, 0);
-            mDozeTriggerDoubleTap.setChecked(value != 0);
-        }
         if (mDozeTriggerNotification != null) {
             int value = Settings.System.getInt(getContentResolver(),
                     Settings.System.DOZE_TRIGGER_NOTIFICATION, 1);
@@ -269,15 +228,6 @@ public class DozeSettingsFragment extends SettingsPreferenceFragment implements
                     Settings.System.DOZE_BRIGHTNESS, mDefaultBrightnessScale);
             mDozeBrightness.setValue((int) (mBrightnessScale * 100));
         }
-    }
-
-    private boolean isTapToWakeEnabled() {
-        return Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.DOUBLE_TAP_TO_WAKE, 0) == 1;
-    }
-
-    private static boolean isTapToWakeAvailable(Resources res) {
-        return res.getBoolean(com.android.internal.R.bool.config_supportDoubleTapWake);
     }
 
     private static boolean isPickupSensorUsedByDefault(AmbientDisplayConfiguration config) {

@@ -89,14 +89,6 @@
             android:summaryOff="@string/doze_trigger_sigmotion_summary_off"
             android:persistent="false" />
 
-    <com.android.settings.preference.SecureSettingSwitchPreference
-            android:key="doze_trigger_doubletap"
-            android:title="@string/doze_trigger_doubletap_title"
-            android:summaryOn="@string/doze_trigger_doubletap_summary_on"
-            android:summaryOff="@string/doze_trigger_doubletap_summary_off"
-            android:defaultValue="true"
-            android:persistent="false" />
-
     <SwitchPreference
             android:key="doze_trigger_notification"
             android:title="@string/doze_trigger_notification_title"
