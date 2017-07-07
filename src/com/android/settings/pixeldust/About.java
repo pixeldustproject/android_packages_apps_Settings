@@ -120,6 +120,23 @@ public class About extends SettingsPreferenceFragment {
                 }
             });
             builder.show();
+        } else if (preference.getKey().equals("sudokamikaze")) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setTitle(R.string.sudo_dialog);
+            builder.setItems(R.array.sudo_entries, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    String [] sudoValues = {
+                        "https://forum.xda-developers.com/member.php?u=7970097"};
+                    Intent link = new Intent(Intent.ACTION_VIEW);
+                    String item = sudoValues[which];
+                    link.setData(Uri.parse(item));
+                    try {
+                        startActivity(link);
+                    } catch (android.content.ActivityNotFoundException e) {
+                    }
+                }
+            });
+            builder.show();
         }
         return super.onPreferenceTreeClick(preference);
     }

@@ -93,6 +93,10 @@
     <string name="nitin">nitin.chobhe</string>
     <string name="nitin_sum">Developer/maintainer for mako</string>
     <string name="nitin_dialog">Follow nitin.chobhe</string>
+    <!-- Sudo -->
+    <string name="sudo">Sudokamikaze</string>
+    <string name="sudo_sum">Developer of mako kernel & QUVNTNM toolchain</string>
+    <string name="sudo_dialog">Follow Sudokamikaze</string>
     <!-- possible profiles -->
     <string name="gplus">Google+</string>
     <string name="play_store">Play store</string>

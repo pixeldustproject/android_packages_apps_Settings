@@ -43,6 +43,11 @@
         <item>@string/xda</item>
     </string-array>
 
+    <!-- Sudokamikaze profiles -->
+    <string-array name="sudo_entries">
+        <item>@string/xda</item>
+    </string-array>
+
     <!-- Names of categories of app ops tabs -->
     <string-array name="app_ops_categories_nitrogen" translatable="false">
         <item>@string/app_ops_cat_location</item>

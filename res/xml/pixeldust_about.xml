@@ -81,6 +81,12 @@
             android:title="@string/nitin"
             android:summary="@string/nitin_sum"/>
 
+        <Preference
+            android:key="sudokamikaze"
+            android:icon="@drawable/ic_sudo"
+            android:title="@string/sudo"
+            android:summary="@string/sudo_sum"/>
+
     </PreferenceCategory>
 
     <!--PreferenceCategory
