@@ -95,7 +95,7 @@
     <string name="nitin_dialog">Follow nitin.chobhe</string>
     <!-- Sudo -->
     <string name="sudo">Sudokamikaze</string>
-    <string name="sudo_sum">Developer of mako kernel & QUVNTNM toolchain</string>
+    <string name="sudo_sum">Developer of mako kernel &amp; QUVNTNM toolchain</string>
     <string name="sudo_dialog">Follow Sudokamikaze</string>
     <!-- possible profiles -->
     <string name="gplus">Google+</string>
