@@ -156,13 +156,12 @@ public class EncryptionInterstitial extends SettingsActivity {
         @Override
         public void onViewCreated(View view, Bundle savedInstanceState) {
             super.onViewCreated(view, savedInstanceState);
-            if (view instanceof GlifPreferenceLayout) {
-                GlifPreferenceLayout layout = (GlifPreferenceLayout) view;
-                layout.setDividerItemDecoration(new SettingsDividerItemDecoration(getContext()));
+            GlifPreferenceLayout layout = (GlifPreferenceLayout) view;
+            layout.setDividerItemDecoration(new SettingsDividerItemDecoration(getContext()));
 
-                layout.setIcon(getContext().getDrawable(R.drawable.ic_lock));
-                layout.setHeaderText(getActivity().getTitle());
-            }
+            layout.setIcon(getContext().getDrawable(R.drawable.ic_lock));
+            layout.setHeaderText(getActivity().getTitle());
+
             // Use the dividers in SetupWizardRecyclerLayout. Suppress the dividers in
             // PreferenceFragment.
             setDivider(null);
@@ -171,11 +170,8 @@ public class EncryptionInterstitial extends SettingsActivity {
         @Override
         public RecyclerView onCreateRecyclerView(LayoutInflater inflater, ViewGroup parent,
                 Bundle savedInstanceState) {
-            if (parent instanceof GlifPreferenceLayout) {
-                GlifPreferenceLayout layout = (GlifPreferenceLayout) parent;
-                return layout.onCreateRecyclerView(inflater, parent, savedInstanceState);
-            }
-            return super.onCreateRecyclerView(inflater, parent, savedInstanceState);
+            GlifPreferenceLayout layout = (GlifPreferenceLayout) parent;
+            return layout.onCreateRecyclerView(inflater, parent, savedInstanceState);
         }
 
         protected void startLockIntent() {

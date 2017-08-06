@@ -10,7 +10,6 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.Shader;
-import android.provider.Settings;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
@@ -73,14 +72,7 @@ public class LinearColorBar extends LinearLayout {
         mEdgeGradientPaint.setStrokeWidth(mLineWidth);
         mEdgeGradientPaint.setAntiAlias(true);
 
-        final boolean mThemeEnabled = Settings.Secure.getInt(context.getContentResolver(),
-                Settings.Secure.THEME_ACCENT_COLOR, 1) != 0;
-
-        if (mThemeEnabled) {
-            mLeftColor = Utils.getColorAccent(context);
-        } else {
-            mLeftColor = context.getResources().getColor(R.color.linear_color_bar_left);
-        }
+        mLeftColor = context.getResources().getColor(R.color.linear_color_bar_left);
         mMiddleColor = context.getResources().getColor(R.color.linear_color_bar_middle);
         mRightColor = context.getResources().getColor(R.color.linear_color_bar_right);
     }
