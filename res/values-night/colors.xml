@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="card_background">#ff424242</color>
-    <color name="card_background_grey">#333333</color>
+    <color name="card_background">#000000</color>
+    <color name="card_background_grey">#2b2b2b</color>
     <color name="lock_pattern_view_regular_color">@*android:color/secondary_text_default_material_dark</color>
 
     <color name="lock_settings_primary">@*android:color/black</color>
-    <color name="lock_settings_background">@*android:color/material_grey_850</color>
+    <color name="lock_settings_background">@*android:color/primary_dark_material_dark</color>
     <color name="lock_settings_text">@*android:color/white</color>
     <color name="lock_settings_pass">@*android:color/material_grey_50</color>
 
